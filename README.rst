@@ -1,13 +1,13 @@
-This
+This is a fork of the google images download repo by hardikvasa. The only additional feature implemented in this for is the ability to download thumbnails only. This is jsut a quick fix i implemented for my own use, so the normal image download features have been completely disabled, make sure to add the '--thumbnail' argument to your query, otherwise the code won't do anything. Also, i broke the image naming feature in the process of making my changes, and haven't bothered to fix it yet.
+
+----------------------------------------------------------------------------------------------------------------------------
 
 
 
 Google Images Download
 ######################
 
- is a fork of the google images download repo by hardikvasa. The only additional feature implemented in this for is the ability to download thumbnails only. This is jsut a quick fix i implemented for my own use, so the normal image download features have been completely disabled, make sure to add the '--thumbnail' argument to your query, otherwise the code won't do anything. Also, i broke the image naming feature in the process of making my changes, and haven't bothered to fix it yet.
 
-----------------------------------------------------------------------------------------------------------------------------
 
 
 Python Script for 'searching' and 'downloading' hundreds of Google images to the local hard disk!
