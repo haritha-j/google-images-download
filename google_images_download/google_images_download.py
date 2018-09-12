@@ -709,8 +709,10 @@ class googleimagesdownload:
                     print("\nImage Metadata: " + str(object))
 
                 #download the images
-                download_status,download_message,return_image_name,absolute_path = self.download_image(object['image_link'],object['image_format'],main_directory,dir_name,count,arguments['print_urls'],arguments['socket_timeout'],arguments['prefix'],arguments['print_size'],arguments['no_numbering'])
-                print(download_message)
+                #download_status,download_message,return_image_name,absolute_path = self.download_image(object['image_link'],object['image_format'],main_directory,dir_name,count,arguments['print_urls'],arguments['socket_timeout'],arguments['prefix'],arguments['print_size'],arguments['no_numbering'])
+                #print(download_message)
+                download_status = "success"
+                return_image_name = "x"+str(count)
                 if download_status == "success":
 
                     # download image_thumbnails
@@ -721,7 +723,7 @@ class googleimagesdownload:
                     count += 1
                     object['image_filename'] = return_image_name
                     items.append(object)  # Append all the links in the list named 'Links'
-                    abs_path.append(absolute_path)
+                    #abs_path.append(absolute_path)
                 else:
                     errorCount += 1
 
